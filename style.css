@@ -1,34 +1,56 @@
 
-
-
-
- h3 {
-     color: rgb(238, 222, 3);
- }
-
-
- a:link {
-     color: #00f;
- }
-
-
- a:visited {
-     color: #800080;
- }
-
-
- a:hover {
-     color: #f00;
- }
-
- a:active {
-     color: #008000;
- }
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 
 body {
-    background-color: rgb(192, 168, 138);
-    color: rgb(105, 63, 63);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #170231; /*Usando a cor purple1*/
+    color: rgb(255, 255, 255);   
+    min-height: 400px; 
+}
+
+footer{
+    
+    display: flex;
+    justify-content:flex-end;
+}
+
+section{
+    color: rgb(255, 255, 255);  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+a{
+   text-decoration: none; 
+   color: white;
 }
 
 
+/* Utility Colors*/
+.purple1{
+    background-color: #170231;
+}
 
+.purple2{
+    background-color: #230540;
+}
+
+.purple3{
+    background-color: #2e074e;
+}
+
+.purple4{
+    background-color: #3a095d;
+}
+/* Utility Colors*/
