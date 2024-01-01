@@ -41,15 +41,19 @@ h3{
 a {
     text-decoration: none;
     color: white;
+    padding-top:42px;
 }
 li{
     list-style-type: none;
 }
 /* Tags*/
 
-/* Classes*/
+/* ID's*/
 #contato{
     height: 200px;
+    gap: 20px;
+    
+
 }
 
 #softSkills{
@@ -70,7 +74,7 @@ li{
     width: 100px;
     padding-right: 30px;
 }
-/* Classes*/
+/* ID's*/
 
 
 /* Utility Colors*/
