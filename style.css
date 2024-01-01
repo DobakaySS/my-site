@@ -1,9 +1,12 @@
+/* Tags*/
 
-header{
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    position: relative;
+    height: 400px;
+    padding-top: 23rem;
 }
 
 body {
@@ -11,46 +14,149 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #170231; /*Usando a cor purple1 para esse background*/
-    color: rgb(255, 255, 255);   
-    min-height: 400px; 
-}
-
-footer{
+    color: rgb(255, 255, 255);
+    min-height: 400px;
+    text-align: center;
     
-    display: flex;
-    justify-content:flex-end;
 }
 
-section{
-    color: rgb(255, 255, 255);  
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+section {
+    color: rgb(255, 255, 255);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 400px;
+    min-height: 350px;
     padding: 100px 20vw;
+    
+}
+h3{
+    font-size: 150%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+/* Tags*/
+
+/* Classes*/
+#contato{
+    height: 200px;
 }
 
-a{
-   text-decoration: none; 
-   color: white;
+#softSkills{
+    height:500px;
+    display: flex;
+    gap:20px;
+    padding: 10px;
+    padding-left: 50px;
+    justify-content: space-evenly;
+
 }
+
+#educacao{
+    height:400px;
+}
+#sax-img{
+    height: 100px;
+    width: 100px;
+    padding-right: 30px;
+}
+/* Classes*/
 
 
 /* Utility Colors*/
-.purple1{
+.purple1 {
     background-color: #170231;
 }
 
-.purple2{
+.purple2 {
     background-color: #230540;
 }
 
-.purple3{
+.purple3 {
     background-color: #2e074e;
 }
 
-.purple4{
+.purple4 {
     background-color: #3a095d;
 }
+
 /* Utility Colors*/
+
+/* Wave Divider*/
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 164px;
+}
+
+.wave .shape-fill {
+    fill: #230540;  /*pink 2*/
+}
+
+/* Wave Divider*/
+
+/* Arrow Divider*/
+.arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.arrow svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 128px;
+}
+
+.arrow .shape-fill {
+    fill: #2e074e;
+}
+/* Arrow Divider*/
+
+/* Book Divider*/
+.book {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.book svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 171px;
+}
+
+.book .shape-fill {
+    fill: #230540;
+}
+/* Book Divider*/
