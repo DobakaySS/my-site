@@ -1,5 +1,3 @@
-/* Tags*/
-
 header {
     display: flex;
     flex-direction: column;
@@ -7,160 +5,47 @@ header {
     position: relative;
     height: 400px;
     padding-top: 23rem;
+    padding-bottom: 23rem;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #170231; /*Usando a cor purple1 para esse background*/
+    font-family: 'Courier New', monospace;
+    background-color: black; /*Usando a cor purple1 para esse background*/
     color: rgb(255, 255, 255);
     min-height: 400px;
     text-align: center;
     
 }
 
-footer {
-    display: flex;
-    justify-content: flex-end;
-}
-
 section {
     color: rgb(255, 255, 255);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 350px;
     padding: 100px 20vw;
     
 }
-h3{
-    font-size: 150%;
+
+h1 {
+  font-family: 'roboto', monospace;
+  font-size: clamp(3rem, 10vw, 10rem);
+  color: white;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
-a {
-    text-decoration: none;
-    color: white;
-    padding-top:42px;
-}
+
 li{
     list-style-type: none;
 }
-/* Tags*/
 
-/* ID's*/
-#contato{
-    height: 200px;
-    gap: 20px;
-    
-
+ul{
+    padding-inline-start: 0px;
 }
 
-#softSkills{
-    height:500px;
+
+footer {
     display: flex;
-    gap:20px;
-    padding: 10px;
-    padding-left: 50px;
-    justify-content: space-evenly;
-
+    justify-content: flex-end;
+    margin: 10px;
+    word-spacing: 5px;
 }
-
-#educacao{
-    height:400px;
-}
-#sax-img{
-    height: 100px;
-    width: 100px;
-    padding-right: 30px;
-}
-/* ID's*/
-
-
-/* Utility Colors*/
-.purple1 {
-    background-color: #170231;
-}
-
-.purple2 {
-    background-color: #230540;
-}
-
-.purple3 {
-    background-color: #2e074e;
-}
-
-.purple4 {
-    background-color: #3a095d;
-}
-
-/* Utility Colors*/
-
-/* Wave Divider*/
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 164px;
-}
-
-.wave .shape-fill {
-    fill: #230540;  /*pink 2*/
-}
-
-/* Wave Divider*/
-
-/* Arrow Divider*/
-.arrow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.arrow svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 128px;
-}
-
-.arrow .shape-fill {
-    fill: #2e074e;
-}
-/* Arrow Divider*/
-
-/* Book Divider*/
-.book {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.book svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 171px;
-}
-
-.book .shape-fill {
-    fill: #230540;
-}
-/* Book Divider*/
