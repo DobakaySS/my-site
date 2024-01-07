@@ -1,7 +1,26 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_.";
-
 let interval = null;
-let animationTriggered = false;
+let globalClientY =0;
+
+const blob = document.getElementById("blob");
+window.onpointermove = event => { 
+  const { clientX, clientY } = event;
+
+    globalClientY = clientY; 
+  
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY+window.scrollY}px`
+  }, { duration: 3000, fill: "forwards" });
+}
+
+window.addEventListener('scroll', function () {
+    const scrollY = window.scrollY;
+    blob.animate({
+        top: `${globalClientY+window.scrollY}px`
+      }, { duration: 3000, fill: "forwards" });
+  });
+
 
 function hackerAnimation(target) {
     let iteration = 0;
@@ -29,7 +48,8 @@ function hackerAnimation(target) {
 }
 
 
-// Delay the animation by 1000 milliseconds (1 second)
+// Delay the animation by (1 second)
 setTimeout(() => {
     hackerAnimation(document.querySelector("h1"));
 }, 1000);
+

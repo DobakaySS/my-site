@@ -1,29 +1,35 @@
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    height: 400px;
-    padding-top: 23rem;
-    padding-bottom: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 400px;
+  padding-top: 23rem;
+  padding-bottom: 23rem;
+  z-index: 3;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', monospace;
-    background-color: black; /*Usando a cor purple1 para esse background*/
-    color: rgb(255, 255, 255);
-    min-height: 400px;
-    text-align: center;
-    
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  background-color: black;
+  /*Usando a cor purple1 para esse background*/
+  color: rgb(255, 255, 255);
+  min-height: 400px;
+  text-align: center;
+ -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+   display: none;
 }
 
 section {
-    color: rgb(255, 255, 255);
-    min-height: 350px;
-    padding: 100px 20vw;
-    
+  color: rgb(255, 255, 255);
+  min-height: 350px;
+  padding: 100px 20vw;
 }
 
 h1 {
@@ -34,18 +40,60 @@ h1 {
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
 
-ul{
-    padding-inline-start: 0px;
+ul {
+  padding-inline-start: 0px;
+
 }
 
 
 footer {
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px;
-    word-spacing: 5px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  word-spacing: 5px;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  height: 35vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(7, 145, 2), rgb(201, 109, 186));
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+}
+
+#blur {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; /* Set the z-index to 2 or any value you prefer */
+  backdrop-filter: blur(12vmax);
+}
+.onTop{
+  z-index: 3;
+  position: relative;
 }
