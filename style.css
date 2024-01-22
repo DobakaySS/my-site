@@ -1,3 +1,4 @@
+/* Header */
 header {
   display: flex;
   flex-direction: column;
@@ -9,29 +10,31 @@ header {
   z-index: 3;
 }
 
+/* Body */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Courier New', monospace;
   background-color: black;
-  /*Usando a cor purple1 para esse background*/
   color: rgb(255, 255, 255);
   min-height: 400px;
   text-align: center;
- -ms-overflow-style: none;
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
-   display: none;
+  display: none;
 }
 
+/* Section */
 section {
   color: rgb(255, 255, 255);
   min-height: 350px;
   padding: 100px 20vw;
 }
 
+/* Heading 1 */
 h1 {
   font-family: 'roboto', monospace;
   font-size: clamp(3rem, 10vw, 10rem);
@@ -40,16 +43,16 @@ h1 {
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
+/* List */
 li {
   list-style-type: none;
 }
 
 ul {
   padding-inline-start: 0px;
-
 }
 
-
+/* Footer */
 footer {
   display: flex;
   justify-content: flex-end;
@@ -57,6 +60,7 @@ footer {
   word-spacing: 5px;
 }
 
+/* Keyframes */
 @keyframes rotate {
   from {
     rotate: 0deg;
@@ -71,6 +75,7 @@ footer {
   }
 }
 
+/* Blob Animation */
 #blob {
   height: 35vmax;
   aspect-ratio: 1;
@@ -79,21 +84,112 @@ footer {
   top: 30%;
   translate: -50% -50%;
   border-radius: 50%;
-  background: linear-gradient(to right, rgb(7, 145, 2), rgb(201, 109, 186));
+  background: linear-gradient(to right, rgb(128, 235, 125), rgb(233, 107, 212));
   animation: rotate 20s infinite;
   opacity: 0.8;
 }
 
+/* Blur */
 #blur {
   height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2; /* Set the z-index to 2 or any value you prefer */
+  z-index: 2;
   backdrop-filter: blur(12vmax);
 }
-.onTop{
+
+.onTop {
   z-index: 3;
   position: relative;
+}
+
+/* Cards */
+#cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 200px;
+}
+
+#cards:hover > .card::after {
+  opacity: 0.5;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 260px;
+  flex-direction: column;
+  position: relative;
+  width: 250px;
+}
+
+.card > .card-content {
+  background-color: var(--card-color);
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  inset: 1px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* Card Image */
+.card-image {
+  align-items: center;
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-image > i {
+  font-size: 6em;
+  opacity: 0.25;
+}
+
+/* Card Info Wrapper */
+.card-info-wrapper {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  padding: 0px 20px;
+}
+
+/* Card Info */
+.card-info {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+}
+
+.card-info > i {
+  font-size: 1em;
+  height: 20px;
+  line-height: 20px;
+}
+
+/* Card Info Title */
+.card-info-title > h3 {
+  font-size: 1.1em;
+  line-height: 20px;
+}
+
+.card-info-title > h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85em;
+  margin-top: 8px;
+}
+
+#Projects {
+  padding-left: 21px;
+  padding-right: 21px;
 }
