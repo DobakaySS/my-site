@@ -1,4 +1,4 @@
-/* Header */
+/* Tags*/
 header {
   display: flex;
   flex-direction: column;
@@ -10,7 +10,6 @@ header {
   z-index: 3;
 }
 
-/* Body */
 body {
   margin: 0;
   padding: 0;
@@ -30,7 +29,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* Section */
+
 section {
   color: rgb(255, 255, 255);
   min-height: 350px;
@@ -38,7 +37,7 @@ section {
   margin-top: 200px;
 }
 
-/* Heading 1 */
+
 h1 {
   font-family: 'roboto', monospace;
   font-size: clamp(3rem, 10vw, 10rem);
@@ -47,7 +46,6 @@ h1 {
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
-/* List */
 li {
   list-style-type: none;
 }
@@ -56,7 +54,6 @@ ul {
   padding-inline-start: 0px;
 }
 
-/* Footer */
 footer {
   display: flex;
   justify-content: flex-end;
@@ -127,7 +124,7 @@ footer {
   border-radius: 10px;
   cursor: pointer;
   display: flex;
-  height: 260px;
+  height: 300px;
   flex-direction: column;
   position: relative;
   width: 250px;
@@ -145,11 +142,10 @@ footer {
   z-index: 2;
 }
 
-/* Card Image */
 .card-image {
   align-items: center;
   display: flex;
-  height: 140px;
+  height: 190px;
   justify-content: center;
   overflow: hidden;
 }
@@ -159,7 +155,6 @@ footer {
   opacity: 0.25;
 }
 
-/* Card Info Wrapper */
 .card-info-wrapper {
   align-items: center;
   display: flex;
@@ -168,7 +163,6 @@ footer {
   padding: 0px 20px;
 }
 
-/* Card Info */
 .card-info {
   align-items: flex-start;
   display: flex;
@@ -181,7 +175,6 @@ footer {
   line-height: 20px;
 }
 
-/* Card Info Title */
 .card-info-title > h3 {
   font-size: 1.1em;
   line-height: 20px;
@@ -193,6 +186,7 @@ footer {
   margin-top: 8px;
 }
 
+/*ID's*/
 #Projects {
   padding-left: 21px;
   padding-right: 21px;

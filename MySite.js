@@ -1,5 +1,5 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_.";
-let interval = null;
+
 let globalClientY = 0;
 
 const blob = document.getElementById("blob");
@@ -33,7 +33,7 @@ function hackerAnimation(target) {
     function animateElement() {
         let iteration = 0;
 
-        clearInterval(interval);
+        let interval = null;
 
         interval = setInterval(() => {
             target.innerText = target.dataset.value
