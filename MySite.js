@@ -67,7 +67,7 @@ function hackerAnimation(target) {
                     //observer.unobserve(target);
 
                 }
-            }, 1000);
+            }, parseInt(target.dataset.delay));//define o tempo de duração antes da animação ocorrer.
         });
     });
 
